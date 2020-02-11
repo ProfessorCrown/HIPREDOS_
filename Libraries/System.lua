@@ -2432,7 +2432,7 @@ function system.updateDesktop()
 		system.execute(paths.system.applicationSettings)
 	end
 	
-	MenuContextMenu:addItem(localization.trash).onTouch = function()
+	MenuContextMenu:addItem(localization.trash17).onTouch = function()
 	    system.execute(paths.system.applicationFinder, "-o", icon.path)
 	end
 	
