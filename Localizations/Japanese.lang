@@ -94,7 +94,7 @@
 	sortByDate = "日付",
 
 	aboutSystem = "システムについて",
-	updates = "更新",
+	settings23 = "設定",
 	update = "リフレッシュ",
 	shutdown = "シャットダウン",
 	logout = "ログアウト",

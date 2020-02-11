@@ -94,7 +94,7 @@
 	sortByDate = "По даті",
 
 	aboutSystem = "Про систему",
-	updates = "Оновлення",
+	settings23 = "Настройка",
 	update = "Оновити",
 	shutdown = "Вимкнути",
 	logout = "Вихід із системи",

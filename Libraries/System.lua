@@ -2428,7 +2428,7 @@ function system.updateDesktop()
 		workspace:draw()
 	end
 
-	MenuContextMenu:addItem("TEST").onTouch = function()
+	MenuContextMenu:addItem(localization.settings23).onTouch = function()
 		system.execute(paths.system.applicationSettings)
 	end
 

@@ -94,7 +94,7 @@
 	sortByDate = "Nach Datum",
 
 	aboutSystem = "Über system",
-	updates = "Sicherheitsaktualisierungen",
+	settings23 = "Einstellungen",
 	update = "Aktualisieren",
 	shutdown = "Shutdown",
 	logout = "Abmelden",
