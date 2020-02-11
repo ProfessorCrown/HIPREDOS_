@@ -124,6 +124,10 @@ function system.getDefaultUserSettings()
 			filesystem.path(paths.system.applicationSettings),
 		},
 		extensions = {
+			[".lua"] = filesystem.path(paths.system.applicationMineCodeIDE),
+			[".cfg"] = filesystem.path(paths.system.applicationMineCodeIDE),
+			[".txt"] = filesystem.path(paths.system.applicationMineCodeIDE),
+			[".lang"] = filesystem.path(paths.system.applicationMineCodeIDE),
 			[".pic"] = filesystem.path(paths.system.applicationPictureEdit),
 			[".3dm"] = paths.system.applications .. "3D Print.app/"
 		},
