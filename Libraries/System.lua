@@ -117,7 +117,6 @@ function system.getDefaultUserSettings()
 		
 		tasks = {},
 		dockShortcuts = {
-			filesystem.path(paths.system.applicationAppMarket),
 			filesystem.path(paths.system.applicationMineCodeIDE),
 			filesystem.path(paths.system.applicationFinder),
 			filesystem.path(paths.system.applicationPictureEdit),
@@ -2410,7 +2409,7 @@ function system.updateDesktop()
 
 	desktopMenu = workspace:addChild(GUI.menu(1, 1, workspace.width, 0x0, 0x696969, 0x3366CC, 0xFFFFFF))
 	
-	local MineOSContextMenu = desktopMenu:addContextMenuItem("█ ПУСК █", 0x000000)
+	local MineOSContextMenu = desktopMenu:addContextMenuItem("█ MENU █", 0x000000)
 	MineOSContextMenu:addItem(localization.aboutSystem).onTouch = function()
 		local container = GUI.addBackgroundContainer(workspace, true, true, localization.aboutSystem)
 		container.layout:removeChildren()
