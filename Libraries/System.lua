@@ -91,7 +91,7 @@ function system.getDefaultUserSettings()
 		interfaceWallpaperBrightness = 0.9,
 
 		interfaceScreensaverEnabled = false,
-		interfaceScreensaverPath = paths.system.screensavers .. "Space.lua",
+		interfaceScreensaverPath = paths.system.screensavers .. "Clock.lua",
 		interfaceScreensaverDelay = 20,
 		
 		interfaceTransparencyEnabled = true,
