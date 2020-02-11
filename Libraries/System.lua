@@ -92,7 +92,7 @@ function system.getDefaultUserSettings()
 
 		interfaceScreensaverEnabled = false,
 		interfaceScreensaverPath = paths.system.screensavers .. "Clock.lua",
-		interfaceScreensaverDelay = 20,
+		interfaceScreensaverDelay = 100,
 		
 		interfaceTransparencyEnabled = true,
 		interfaceTransparencyDock = 0.4,

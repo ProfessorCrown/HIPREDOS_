@@ -193,7 +193,6 @@ module.onTouch = function()
 
 	local function update()
 		local users = {computer.users()}
-		-- local users = {"ECS", "Xylic", "Computrix", "Yan0t", "Кукарек", "Bird", "Pirnogion"}
 		
 		claimContainer.hidden = #users == 0
 		claimComboBox:clear()
