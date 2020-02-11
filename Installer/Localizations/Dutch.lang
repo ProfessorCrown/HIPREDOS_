@@ -17,6 +17,6 @@
 	flashing = "Flashen van EEPROM...",
 	creating = "Gebruikersprofiel aanmaken...",
 	installing = "Installeren",
-	installed = "MineOS is geïnstalleerd. Veel plezier!",
+	installed = "HIPRED OS is geïnstalleerd. Veel plezier!",
 	reboot = "Herstart",
 }
