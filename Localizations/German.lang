@@ -94,6 +94,7 @@
 	sortByDate = "Nach Datum",
 
 	aboutSystem = "Über system",
+	trash = "Trash"
 	settings23 = "Einstellungen",
 	update = "Aktualisieren",
 	shutdown = "Shutdown",

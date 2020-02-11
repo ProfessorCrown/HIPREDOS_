@@ -94,6 +94,7 @@
 	sortByDate = "Podľa dátumu",
 
 	aboutSystem = "O systéme",
+	trash = "Trash"
 	settings23 = "Nastavenie",
 	update = "Obnoviť",
 	shutdown = "Vypnúť",

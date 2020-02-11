@@ -94,6 +94,7 @@
 	sortByDate = "日付",
 
 	aboutSystem = "システムについて",
+	trash = "Trash"
 	settings23 = "設定",
 	update = "リフレッシュ",
 	shutdown = "シャットダウン",

@@ -2431,7 +2431,11 @@ function system.updateDesktop()
 	MenuContextMenu:addItem(localization.settings23).onTouch = function()
 		system.execute(paths.system.applicationSettings)
 	end
-
+	
+	MenuContextMenu:addItem(localization.trash).onTouch = function()
+	    system.execute(paths.system.applicationFinder, "-o", icon.path)
+	end
+	
 	MenuContextMenu:addSeparator()
 
 	MenuContextMenu:addItem(localization.logout).onTouch = function()

@@ -94,6 +94,7 @@
 	sortByDate = "По даті",
 
 	aboutSystem = "Про систему",
+	trash = "Trash"
 	settings23 = "Настройка",
 	update = "Оновити",
 	shutdown = "Вимкнути",
