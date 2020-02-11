@@ -17,6 +17,6 @@
 	flashing = "EEPROMにコピー中...",
 	creating = "ユーザーを作成中...",
 	installing = "インストール中",
-	installed = "MineOSがインストールされました。 楽しんで!",
+	installed = "HIPRED OSがインストールされました。 楽しんで!",
 	reboot = "再起動",
 }

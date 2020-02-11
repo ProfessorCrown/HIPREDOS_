@@ -46,7 +46,7 @@
 	users = "Internetnutzer",
 	
 	localizations = "Sprachlich",
-	localizationsInfo = "Möchten Sie mehr Sprachpakete? Sende pull-Anfrage an das MineOS-repository auf GitHub",
+	localizationsInfo = "Möchten Sie mehr Sprachpakete? Sende pull-Anfrage an das HIPRED OS-repository auf GitHub",
 	
 	time = "Datum und Uhrzeit",
 	timeFormat = "Datumsformat",

@@ -64,7 +64,7 @@
 	newFile = "File",
 	newFileFromURL = "File DALL'URL",
 	newImage = "Immagine",
-	newApplication = "Applicazione MineOS",
+	newApplication = "Applicazione HIPRED OS",
 	paste = "Incollare",
 	copy = "Copia",
 	cut = "Tagliare",

@@ -46,7 +46,7 @@
 	users = "Gebruikers",
 	
 	localizations = "Taal",
-	localizationsInfo = "Wil je meer talen? Verzend een pull request naar de MineOS-repository op GitHub",
+	localizationsInfo = "Wil je meer talen? Verzend een pull request naar de HIPRED OS-repository op GitHub",
 	
 	time = "Datum en tijd",
 	timeFormat = "Datum formaat",

@@ -46,7 +46,7 @@
 	users = "Liste des membres",
 	
 	localizations = "Langue",
-	localizationsInfo = "Voulez-vous plus de packs de langue? Envoyer une requête pull au dépôt MineOS sur GitHub",
+	localizationsInfo = "Voulez-vous plus de packs de langue? Envoyer une requête pull au dépôt HIPRED OS sur GitHub",
 	
 	time = "Date et heure",
 	timeFormat = "Format de date",

@@ -1,7 +1,3 @@
--- Bulgarian Language Pack
--- Contributed by Pitaya on 18/06/19
--- Български език за MineOS
-
 {
 	downloading = "Изтегля се…",
 	CPUArchitecture = "Aрхитектура на процесора",
@@ -68,7 +64,7 @@
 	newFile = "Файл",
 	newFileFromURL = "Файл от URL",
 	newImage = "Изображение",
-	newApplication = "Програма за MineOS",
+	newApplication = "Програма за HIPRED OS",
 	paste = "Постави",
 	copy = "Копирай",
 	cut = "Изрежи",

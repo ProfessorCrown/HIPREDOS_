@@ -17,6 +17,6 @@
 	flashing = "Blinkendes EEPROM...",
 	creating = "Erstellen eines Benutzerprofils...",
 	installing = "Installieren",
-	installed = "Minen installiert wurde. Genießen Sie!",
+	installed = "HIPRED OS installiert wurde. Genießen Sie!",
 	reboot = "Neustart",
 }

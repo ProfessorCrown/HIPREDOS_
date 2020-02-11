@@ -17,6 +17,6 @@
 	flashing = "Фърмуерът на EEPROM ...",
 	creating = "Създава се потребителски профил ...",
 	installing = "Монтаж",
-	installed = "MineOS е инсталиран. Наслаждавайте се!",
+	installed = "HIPRED OS е инсталиран. Наслаждавайте се!",
 	reboot = "Презареди",
 }

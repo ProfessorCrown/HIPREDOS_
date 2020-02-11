@@ -17,6 +17,6 @@
 	flashing = "Flashing EEPROM...",
 	creating = "Creating user profile...",
 	installing = "Installing",
-	installed = "MineOS has been installed. Enjoy!",
+	installed = "HIPRED OS has been installed. Enjoy!",
 	reboot = "Reboot the computer",
 }

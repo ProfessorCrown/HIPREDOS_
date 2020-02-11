@@ -17,6 +17,6 @@
 	flashing = "Flashovanie EEPROM...",
 	creating = "Vytváranie profilu používateľa...",
 	installing = "Inštalovanie",
-	installed = "MineOS sa nainštaloval. Užite si!",
+	installed = "HIPRED OS sa nainštaloval. Užite si!",
 	reboot = "Reštartovať",
 }

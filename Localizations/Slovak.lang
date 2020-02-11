@@ -64,7 +64,7 @@
 	newFile = "Súbor",
 	newFileFromURL = "Súbor z URL",
 	newImage = "Obraz",
-	newApplication = "MineOS aplikácia",
+	newApplication = "HIPRED OS aplikácia",
 	paste = "Prilepiť",
 	copy = "Kopírovať",
 	cut = "Vystrihnúť",

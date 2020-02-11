@@ -64,7 +64,7 @@
 	newFile = "ファイル",
 	newFileFromURL = "URLからファイルを取得",
 	newImage = "画像",
-	newApplication = "MineOSアプリ",
+	newApplication = "HIPRED OSアプリ",
 	paste = "貼り付け",
 	copy = "コピー",
 	cut = "切り取り",

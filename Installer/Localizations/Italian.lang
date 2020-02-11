@@ -17,6 +17,6 @@
 	flashing = "EEPROM lampeggiante...",
 	creating = "Creazione di profilo utente...",
 	installing = "Installare",
-	installed = "Le miniere sono state installate. Buon appetito!",
+	installed = "HIPRED OS installate. Buon appetito!",
 	reboot = "Riavviare",
 }

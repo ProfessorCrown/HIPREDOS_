@@ -46,7 +46,7 @@
 	users = "Користувачі",
 
 	localizations = "Мова",
-	localizationsInfo = "Бажаєте більше мовних пакетів? Надсилайте pull request в репозиторій MineOS на GitHub",
+	localizationsInfo = "Бажаєте більше мовних пакетів? Надсилайте pull request в репозиторій HIPRED OS на GitHub",
 
 	time = "Дата та час",
 	timeFormat = "Формат дати",

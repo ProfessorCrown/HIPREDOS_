@@ -64,7 +64,7 @@
 	newFile = "新文件",
 	newFileFromURL = "从URL获得文件",
 	newImage = "图像",
-	newApplication = "MineOS应用",
+	newApplication = "HIPRED OS应用",
 	paste = "粘贴",
 	copy = "复制",
 	cut = "剪切",

@@ -46,7 +46,7 @@
 	users = "ユーザー",
 	
 	localizations = "言語",
-	localizationsInfo = "他の言語パックが欲しいですか? GithubでMineOSのプロジェクトにPull Requestを送ってください",
+	localizationsInfo = "他の言語パックが欲しいですか? GithubでHIPRED OSのプロジェクトにPull Requestを送ってください",
 	
 	time = "時刻と日付",
 	timeFormat = "日付の形式",

@@ -17,6 +17,6 @@
 	flashing = "烧录到EEPROM..",
 	creating = "创建用户..",
 	installing = "正在安装",
-	installed = "MineOS已安装完成，玩得开心",
+	installed = "HIPRED OS已安装完成，玩得开心",
 	reboot = "重启",
 }

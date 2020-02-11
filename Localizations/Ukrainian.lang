@@ -64,7 +64,7 @@
 	newFile = "Файл",
 	newFileFromURL = "Файл з URL",
 	newImage = "Зображення",
-	newApplication = "Додаток MineOS ",
+	newApplication = "Додаток HIPRED OS ",
 	paste = "Вставити",
 	copy = "Копіювати",
 	cut = "Вирізати",
