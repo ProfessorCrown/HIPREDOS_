@@ -1,7 +1,7 @@
 
 local EEPROMProxy, internetProxy, GPUProxy = component.proxy(component.list("eeprom")()), component.proxy(component.list("internet")()), component.proxy(component.list("gpu")())
 
-local repositoryURL = "https://raw.githubusercontent.com/ProfessorCrown/HIPREDOS/master/"
+local repositoryURL = "https://raw.githubusercontent.com/ProfessorCrown/HIPREDOS_/master/"
 local installerURL = "Installer/"
 local EFIURL = "EFI/Minified.lua"
 
