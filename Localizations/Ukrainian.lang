@@ -95,6 +95,7 @@
 
 	aboutSystem = "Про систему",
 	trash17 = "Trash",
+	manager = "Finder",
 	settings23 = "Настройка",
 	update = "Оновити",
 	shutdown = "Вимкнути",

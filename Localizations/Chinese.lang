@@ -95,6 +95,7 @@
 
 	aboutSystem = "关于系统",
 	trash17 = "Trash",
+	manager = "Finder",
 	settings23 = "设置",
 	update = "刷新",
 	shutdown = "关机",

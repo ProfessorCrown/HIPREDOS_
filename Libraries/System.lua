@@ -116,12 +116,7 @@ function system.getDefaultUserSettings()
 		iconVerticalSpace = 1,
 		
 		tasks = {},
-		dockShortcuts = {
-			filesystem.path(paths.system.applicationMineCodeIDE),
-			filesystem.path(paths.system.applicationFinder),
-			filesystem.path(paths.system.applicationPictureEdit),
-			filesystem.path(paths.system.applicationSettings),
-		},
+		dockShortcuts = {},
 		extensions = {
 			[".lua"] = filesystem.path(paths.system.applicationMineCodeIDE),
 			[".cfg"] = filesystem.path(paths.system.applicationMineCodeIDE),
@@ -2408,7 +2403,21 @@ function system.updateDesktop()
 	desktopWindowsContainer = workspace:addChild(GUI.container(1, 2, 1, 1))
 
 	desktopMenu = workspace:addChild(GUI.menu(1, 1, workspace.width, 0x0, 0x696969, 0x3366CC, 0xFFFFFF))
+	-- HOT BAR HOTBAR HOTBARMENU MENU
+	MenuContextMenu:addItem(localization.settings23).onTouch = function()
+		system.execute(paths.system.applicationSettings)
+	end
 	
+	MenuContextMenu:addItem(localization.trash17).onTouch = function()
+	    system.execute(paths.system.applicationFinder, "-o", icon.path)
+	end
+
+	MenuContextMenu:addItem(localization.manager).onTouch = function()
+	    system.execute(paths.system.applicationFinder)
+	end
+	
+	MenuContextMenu:addSeparator()
+
 	local MenuContextMenu = desktopMenu:addContextMenuItem("█ MENU █", 0x000000)
 	MenuContextMenu:addItem(localization.aboutSystem).onTouch = function()
 		local container = GUI.addBackgroundContainer(workspace, true, true, localization.aboutSystem)
@@ -2428,14 +2437,6 @@ function system.updateDesktop()
 		workspace:draw()
 	end
 
-	MenuContextMenu:addItem(localization.settings23).onTouch = function()
-		system.execute(paths.system.applicationSettings)
-	end
-	
-	MenuContextMenu:addItem(localization.trash17).onTouch = function()
-	    system.execute(paths.system.applicationFinder, "-o", icon.path)
-	end
-	
 	MenuContextMenu:addSeparator()
 
 	MenuContextMenu:addItem(localization.logout).onTouch = function()
