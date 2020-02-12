@@ -16,7 +16,7 @@ local userSettings = system.getUserSettings()
 local localization = system.getSystemLocalization()
 
 local FTPMountPath = paths.system.mounts .. "FTP/"
-local configPath = paths.user.applicationData .. "Finder/Config.cfg"
+local configPath = paths.user.applicationData .. "Manager/Config.cfg"
 local config = {
 	favourites = {
 		{ name = "Root", path = "/" },
@@ -473,7 +473,7 @@ local function updateIconField()
 			else
 				GUI.tableEventHandler(workspace, self, e1, e2, e3, e4, e5)
 			end
-		elseif e1 == "system" or e1 == "Finder" then
+		elseif e1 == "system" or e1 == "Manager" then
 			if e2 == "updateFileList" then
 				updateFileListAndDraw()
 			elseif e2 == "updateFavourites" then

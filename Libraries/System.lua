@@ -609,7 +609,7 @@ local function iconOnRightClick(selectedIcons, icon, e1, e2, e3, e4)
 							container:remove()
 
 							if e1 == "touch" and #input.text > 0 then
-								computer.pushSignal("Finder", "updateFavourites", {name = input.text, path = icon.path})
+								computer.pushSignal("Manager", "updateFavourites", {name = input.text, path = icon.path})
 							else
 								workspace:draw()
 							end
@@ -2186,15 +2186,15 @@ function system.updateDesktop()
 	desktopIconField.iconConfigEnabled = true
 	
 	desktopIconField.launchers.directory = function(icon)
-		system.execute(paths.system.applicationFinder, "-o", icon.path)
+		system.execute(paths.system.applicationManager, "-o", icon.path)
 	end
 	
 	desktopIconField.launchers.showContainingFolder = function(icon)
-		system.execute(paths.system.applicationFinder, "-o", filesystem.path(icon.shortcutPath or icon.path))
+		system.execute(paths.system.applicationManager, "-o", filesystem.path(icon.shortcutPath or icon.path))
 	end
 	
 	desktopIconField.launchers.showPackageContent = function(icon)
-		system.execute(paths.system.applicationFinder, "-o", icon.path)
+		system.execute(paths.system.applicationManager, "-o", icon.path)
 	end
 
 	dockContainer = workspace:addChild(GUI.container(1, 1, workspace.width, 7))
@@ -2284,7 +2284,7 @@ function system.updateDesktop()
 			end
 			
 			contextMenu:addItem(localization.showContainingFolder).onTouch = function()
-				system.execute(paths.system.applicationFinder, "-o", filesystem.path(icon.shortcutPath or icon.path))
+				system.execute(paths.system.applicationManager, "-o", filesystem.path(icon.shortcutPath or icon.path))
 			end
 			
 			contextMenu:addSeparator()
@@ -2331,11 +2331,11 @@ function system.updateDesktop()
 	end
 
 	-- Trash
-	local icon = dockContainer.addIcon(paths.user.trash)
-	icon.image = image.load(paths.system.icons .. "Trash.pic")
-	icon.launch = function()
-		system.execute(paths.system.applicationFinder, "-o", icon.path)
-	end
+	--local icon = dockContainer.addIcon(paths.user.trash)
+	--icon.image = image.load(paths.system.icons .. "Trash.pic")
+	--icon.launch = function()
+	--	system.execute(paths.system.applicationManager, "-o", icon.path)
+	--end
 
 	icon.eventHandler = dockIconEventHandler
 
@@ -2409,7 +2409,7 @@ function system.updateDesktop()
 	end
 	
 	MenuContextMenu:addItem(localization.trash17).onTouch = function()
-	    system.execute(paths.system.applicationFinder, "-o", icon.path)
+	    system.execute(paths.system.applicationManager, "-o", icon.path)
 	end
 
 	local MenuContextMenu = desktopMenu:addContextMenuItem("█ MENU █", 0x000000)
