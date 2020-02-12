@@ -95,6 +95,7 @@
 
 	aboutSystem = "О системе",
 	trash17 = "Карзина",
+	
 	settings23 = "Настройки",
 	update = "Обновить",
 	shutdown = "Выключить",
