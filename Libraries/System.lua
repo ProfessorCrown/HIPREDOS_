@@ -2331,11 +2331,11 @@ function system.updateDesktop()
 	end
 
 	-- Trash
-	--local icon = dockContainer.addIcon(paths.user.trash)
-	--icon.image = image.load(paths.system.icons .. "Trash.pic")
-	--icon.launch = function()
-	--	system.execute(paths.system.applicationManager, "-o", icon.path)
-	--end
+	local icon = dockContainer.addIcon(paths.user.trash)
+	icon.image = image.load(paths.system.icons .. "Trash.pic")
+	icon.launch = function()
+		system.execute(paths.system.applicationManager, "-o", icon.path)
+	end
 
 	icon.eventHandler = dockIconEventHandler
 
