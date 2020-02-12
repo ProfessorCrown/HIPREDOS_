@@ -118,10 +118,10 @@ function system.getDefaultUserSettings()
 		tasks = {},
 		dockShortcuts = {},
 		extensions = {
-			[".lua"] = filesystem.path(paths.system.applicationIDE),
-			[".cfg"] = filesystem.path(paths.system.applicationIDE),
-			[".txt"] = filesystem.path(paths.system.applicationIDE),
-			[".lang"] = filesystem.path(paths.system.applicationIDE),
+			[".lua"] = filesystem.path(paths.system.applicationMineCodeIDE),
+			[".cfg"] = filesystem.path(paths.system.applicationMineCodeIDE),
+			[".txt"] = filesystem.path(paths.system.applicationMineCodeIDE),
+			[".lang"] = filesystem.path(paths.system.applicationMineCodeIDE),
 			[".pic"] = filesystem.path(paths.system.applicationPictureEdit),
 			[".3dm"] = paths.system.applications .. "3D Print.app/"
 		},
@@ -419,7 +419,7 @@ local iconLaunchers = {
 	end,
 
 	script = function(icon)
-		system.execute(paths.system.applicationIDE, icon.path)
+		system.execute(paths.system.applicationMineCodeIDE, icon.path)
 	end,
 
 	showPackageContent = function(icon)
@@ -585,7 +585,7 @@ local function iconOnRightClick(selectedIcons, icon, e1, e2, e3, e4)
 		if icon.isDirectory then
 			if icon.extension == ".app" then
 				contextMenu:addItem(localization.edit .. " Main.lua").onTouch = function()
-					system.execute(paths.system.applicationIDE, icon.path .. "Main.lua")
+					system.execute(paths.system.applicationMineCodeIDE, icon.path .. "Main.lua")
 				end
 
 				contextMenu:addItem(localization.showPackageContent).onTouch = function()
@@ -1232,7 +1232,7 @@ local function iconFieldBackgroundClick(iconField, e1, e2, e3, e4, e5, ...)
 				filesystem.write(path, "")
 
 				iconFieldSaveIconPosition(iconField, container.input.text, e3, e4)
-				system.execute(paths.system.applicationIDE, path)
+				system.execute(paths.system.applicationMineCodeIDE, path)
 				computer.pushSignal("system", "updateFileList")
 			end
 		end
