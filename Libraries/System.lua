@@ -2404,41 +2404,45 @@ function system.updateDesktop()
 
 	desktopMenu = workspace:addChild(GUI.menu(1, 1, workspace.width, 0x0, 0x696969, 0x3366CC, 0xFFFFFF))
 	-- HOT BAR HOTBAR HOTBARMENU MENU
+	local MenuContextMenu = desktopMenu:addContextMenuItem("█ MENU █", 0x000000)
+
 	MenuContextMenu:addItem(localization.settings23).onTouch = function()
 		system.execute(paths.system.applicationSettings)
 	end
 	
 	MenuContextMenu:addItem(localization.trash17).onTouch = function()
-	    system.execute(paths.system.applicationManager, "-o", icon.path)
+	    system.execute(paths.system.applicationFinder, "-o", icon.path)
 	end
+	
+    MenuContextMenu:addSeparator()
 
-	local MenuContextMenu = desktopMenu:addContextMenuItem("█ MENU █", 0x000000)
 	MenuContextMenu:addItem(localization.aboutSystem).onTouch = function()
-		local windows2 = desktop:addChild(GUI.titledWindow(4, 4, 90, 30, "Информация о GUI", true))
-	        windows2:addChild(GUI.panel(1, 2, windows2.width, windows2.height, 0xbfbfbf)) -- Фон программы
+		local windows2 = workspace:addChild(GUI.titledWindow(4, 4, 90, 30, localization.aboutSystem, true))
+	    windows2:addChild(GUI.panel(1, 2, windows2.width, windows2.height, 0xbfbfbf)) -- Фон программы
 	    local InfoTable = windows2:addChild(GUI.textBox(2, 3, 55, 27, 0x919191, 0xFFFFFF, {}, 1, 1, 0))
-            table.insert(InfoTable.lines, {text = "        Информация о графической оболочки", color = 0xb80000})
+        table.insert(InfoTable.lines, {text = "        Информация HIPRED OS", color = 0xb80000})
 	    local DevTable = windows2:addChild(GUI.textBox(60, 3, 29, 7, 0x919191, 0xFFFFFF, {}, 1, 1, 0))
-            table.insert(DevTable.lines, {text = "        РАЗРАБОТЧИКИ", color = 0xb80000})
-	        table.insert(DevTable.lines, {text = "Основатель - Foroney", color = 0x2D2D2D})
+        table.insert(DevTable.lines, {text = "        РАЗРАБОТЧИКИ", color = 0xb80000})
+	    table.insert(DevTable.lines, {text = "Основатель - Foroney", color = 0x2D2D2D})
 	    local WarnTable = windows2:addChild(GUI.textBox(60, 11, 29, 11, 0x919191, 0xFFFFFF, {}, 1, 1, 0))
-            table.insert(WarnTable.lines, {text = "       ПРЕДУПРЕЖДЕНИЕ", color = 0xb80000})
-	        table.insert(WarnTable.lines, {text = "Данное GUI является ешё сы-", color = 0x2D2D2D})
-	    	table.insert(WarnTable.lines, {text = "рой! Если вы нашли баги, то", color = 0x2D2D2D})
-	    	table.insert(WarnTable.lines, {text = "прошу уведомить нас!", color = 0x2D2D2D})
-	    	table.insert(WarnTable.lines, {text = "Можно это сделать через", color = 0x2D2D2D})
-		    table.insert(WarnTable.lines, {text = "GitHub в Pull Request!", color = 0x2D2D2D})
+        table.insert(WarnTable.lines, {text = "       ПРЕДУПРЕЖДЕНИЕ", color = 0xb80000})
+	    table.insert(WarnTable.lines, {text = "В данной ос полностью было ", color = 0x2D2D2D})
+		table.insert(WarnTable.lines, {text = "переработанн  MineOS и здесь", color = 0x2D2D2D})
+		table.insert(WarnTable.lines, {text = "AppMarket и многих приложе-", color = 0x2D2D2D})
+		table.insert(WarnTable.lines, {text = "ний! Если хотите помочь, то", color = 0x2D2D2D})
+		table.insert(WarnTable.lines, {text = "пишите в GitHub в Pull ", color = 0x2D2D2D})
+		table.insert(WarnTable.lines, {text = "Request!", color = 0x2D2D2D})
         local DonateTable = windows2:addChild(GUI.textBox(60, 24, 29, 6, 0x919191, 0xFFFFFF, {}, 1, 1, 0))
-            table.insert(DonateTable.lines, {text = "       ПОЖЕРТВОВАНИЕ", color = 0xb80000})
-	        table.insert(DonateTable.lines, {text = "Мы всегда будем рады вашей", color = 0x2D2D2D})
-	    	table.insert(DonateTable.lines, {text = "поддержки! Все ваши пожер-", color = 0x2D2D2D})
-	     	table.insert(DonateTable.lines, {text = "твование пойдут на улучше-", color = 0x2D2D2D})
-	     	table.insert(DonateTable.lines, {text = "ние контента. Благодарю!!!", color = 0x2D2D2D})
-	    	table.insert(DonateTable.lines, {text = "     QIWI +79248748764    ", color = 0x2D2D2D})
-        windows2.actionButtons.close.onTouch = function()
-            windows2:close()
-            desktop:draw()
-        end
+        table.insert(DonateTable.lines, {text = "       ПОЖЕРТВОВАНИЕ", color = 0xb80000})
+	    table.insert(DonateTable.lines, {text = "Мы всегда будем рады вашей", color = 0x2D2D2D})
+		table.insert(DonateTable.lines, {text = "поддержки! Все ваши пожер-", color = 0x2D2D2D})
+		table.insert(DonateTable.lines, {text = "твование пойдут на улучше-", color = 0x2D2D2D})
+		table.insert(DonateTable.lines, {text = "ние контента. Благодарю!!!", color = 0x2D2D2D})
+		table.insert(DonateTable.lines, {text = "     QIWI +79248748764    ", color = 0x2D2D2D})
+    	windows2.actionButtons.close.onTouch = function()
+       		windows2:close()
+			workspace:draw()
+    	end
 	end
 
 	MenuContextMenu:addSeparator()
