@@ -865,10 +865,10 @@ function GUI.actionButtons(x, y, fatSymbol)
 	local minimize1 = fatSymbol and "██" or "██"
 	local maximize1 = fatSymbol and "██" or "██"
 	
-	local container = GUI.container(x, y, 5, 1)
+	local container = GUI.container(x, y, 9, 1)
 	container.close = container:addChild(GUI.button(1, 1, 1, 1, nil, 0xFF4940, nil, 0x992400, close1))
-	container.minimize = container:addChild(GUI.button(7, 1, 1, 1, nil, 0xFFB640, nil, 0x996D00, minimize1))
-	container.maximize = container:addChild(GUI.button(4, 1, 1, 1, nil, 0x00B640, nil, 0x006D40, maximize1))
+	container.minimize = container:addChild(GUI.button(8, 1, 1, 1, nil, 0xFFB640, nil, 0x996D00, minimize1))
+	container.maximize = container:addChild(GUI.button(5, 1, 1, 1, nil, 0x00B640, nil, 0x006D40, maximize1))
 
 	return container
 end
