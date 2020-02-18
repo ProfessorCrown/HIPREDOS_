@@ -2402,7 +2402,7 @@ function system.updateDesktop()
 
 	desktopWindowsContainer = workspace:addChild(GUI.container(1, 2, 1, 1))
 
-	desktopMenu = workspace:addChild(GUI.menu(1, 1, workspace.width, 0x0, 0x696969, 0x3366CC, 0xFFFFFF))
+	desktopMenu = workspace:addChild(GUI.menu(1, 1, workspace.width, 0x0, 0x000000, 0x3366CC, 0x000000))
 	-- HOT BAR HOTBAR HOTBARMENU MENU
 	local MenuContextMenu = desktopMenu:addContextMenuItem("█ MENU █", 0x000000)
 
