@@ -936,7 +936,7 @@ function GUI.alert(...)
 	end
 	if #args == 0 then args[1] = "nil" end
 
-	local sign = image.fromString([[06030000FF 0000FF 00F7FF▟00F7FF▙0000FF 0000FF 0000FF 00F7FF▟F7FF00 F7FF00 00F7FF▙0000FF 00F7FF▟00F7FF▙]])
+	local sign = image.fromString([[06030000FF 0000FF 00F7FF▟00F7FF▙0000FF 0000FF 0000FF 00F7FF▟F7FF00 F7FF00 00F7FF▙0000FF 00F7FF▟F7FF00WF7FF00AF7FF00RF7FF00N00F7FF▙]])
 	local offset = 2
 	local lines = #args > 1 and "\"" .. table.concat(args, "\", \"") .. "\"" or args[1]
 	local bufferWidth, bufferHeight = screen.getResolution()
