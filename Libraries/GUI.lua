@@ -861,9 +861,9 @@ end
 --------------------------------------------------------------------------------
 
 function GUI.actionButtons(x, y, fatSymbol)
-	local close1 = fatSymbol and "X" or "x"
-	local minimize1 = fatSymbol and "_" or "_"
-	local maximize1 = fatSymbol and "O" or "o"
+	local close1 = fatSymbol and "◀" or "◀"
+	local minimize1 = fatSymbol and "▶" or "▶"
+	local maximize1 = fatSymbol and "◆" or "◆"
 	
 	local container = GUI.container(x, y, 6, 1)
 	container.close = container:addChild(GUI.button(1, 1, 1, 1, nil, 0xFF4940, nil, 0x992400, close1))
